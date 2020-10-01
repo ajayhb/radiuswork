@@ -116,4 +116,4 @@ E) Response time and further scope:
     1) search result fetch of search_result/ API takes around 100-150 ms for 36K rows in table.
     2) To maintain the same response for millions of rows, the table could be Indexed on latitude and longitude columns
        which will give same/ similar response time for millions of rows in the table.
- 
+    3) A logic could be used, that generates score from 1 to 20/30 for every function (Bedroom, Bathroom, Price, Distance) rather than just 4 values maybe.
