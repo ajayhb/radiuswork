@@ -74,3 +74,46 @@ C) Apis to test out:
         }'
         
         (remove the param that you don't want to pass among minBudget/ maxBudget, minBathrooms/maxBathrooms and minBedrooms/maxBedrooms).
+
+D) Sample Responses:
+    
+    1) seller_table/
+    
+    {
+        'success': True,
+        'message': 'Seller Table Populated successfully.'
+    }
+    
+    
+    2) search_result/
+    
+    {
+    "success": true,
+    "data": {
+        "10": {
+            "isAvailable": "Yes",
+            "latitude": 30.100628000000004,
+            "longitude": -81.703751,
+            "price": "$900.0",
+            "bedrooms": 7,
+            "bathrooms": 5,
+            "matchPercentage": 100
+        },
+        "8": {
+            "isAvailable": "Yes",
+            "latitude": 30.102217,
+            "longitude": -81.707146,
+            "price": "$700.0",
+            "bedrooms": 8,
+            "bathrooms": 7,
+            "matchPercentage": 85
+        }
+      }
+      
+      
+E) Response time and further scope:
+
+    1) search result takes around 100-150 ms for 36K rows in table.
+    2) To maintain the same response for millions of rows, the table could be Indexed on latitude and longitude columns
+       which will give same/ similar response time for millions of rows in the table.
+ 
