@@ -1,4 +1,5 @@
 Project name: radiusagent
+
 App Name: buyerinfo
 
 A) Setup:
@@ -71,3 +72,5 @@ C) Apis to test out:
         "minBedrooms":2,
         "maxBedrooms":8
         }'
+        
+        (remove the param that you don't want to pass among minBudget/ maxBudget, minBathrooms/maxBathrooms and minBedrooms/maxBedrooms).
