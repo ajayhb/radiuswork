@@ -52,7 +52,7 @@ B) Assumptions and References:
 
 C) Apis to test out:
 
-    1) populate_seller_table/ API that populates the MySql table with following values:
+    1) populate_seller_table/ API that populates the MySql table with following values: (1 time API)
        cURL request:
           curl --location --request POST 'http://127.0.0.1:8000/populate_seller_table/'
       
