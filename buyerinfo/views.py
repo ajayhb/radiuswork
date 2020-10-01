@@ -40,15 +40,16 @@ def populateSellerTable(request):
                             values ({}, {}, {}, {}, {});".format(latitude, longitude, price, bedrooms, bathrooms)
             print(sellerDataInsertQuery)
             cursor.execute(sellerDataInsertQuery)
-    except Exception as e:
-        return JsonResponse({
-            'success': False,
-            'message': e
-            })
-
-    finally:
+        
         conn.commit()
         conn.close()
+
+    except Exception as e:
+        print(e)
+        return JsonResponse({
+            'success': False,
+            'message': json.dumps(e)
+            })
 
     return JsonResponse({
         'success': True,
