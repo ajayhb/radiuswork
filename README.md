@@ -110,7 +110,7 @@ D) Sample Responses:
         }
       }
       
-      
+      the innermost key in data's values is the ID of the MySql table (sellerID)
 E) Response time and further scope:
 
     1) search result takes around 100-150 ms for 36K rows in table.
