@@ -34,7 +34,7 @@ B) Assumptions and References:
     
         create TABLE sellerdata(
             id INT AUTO_INCREMENT PRIMARY KEY,
-            isAvailable boolean not null default 0,
+            isAvailable boolean not null default 1,
             latitude DOUBLE,
             longitude DOUBLE,
             price DOUBLE,
